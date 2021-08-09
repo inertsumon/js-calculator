@@ -72,3 +72,9 @@ button {
 .symbol {
   background-color: rgb(236, 108, 108);
 }
+
+@media only screen and (max-width: 600px) {
+  #screen2 {
+    display: none;
+  }
+}
