@@ -22,10 +22,11 @@ function calcfunc(input) {
              screen.value = screenInputs;
          }
          else if (inputText == "=") {
-             let result = eval(screenInputs);
-             screen.value = result;
+             let inputHistory = screenInputs;
+             screenInputs = eval(screenInputs);
+             screen.value = screenInputs;
 
-             history.value = screenInputs +" = " +result;
+             history.value = inputHistory +" = " +screenInputs;
              
          }
          else {
